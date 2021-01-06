@@ -1,0 +1,771 @@
+/*Reset CSS*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/*///////////////*/
+
+* {
+    box-sizing: border-box;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+
+/* start commented backslash hack \*/
+
+* html .clearfix {
+    height: 1%;
+}
+
+.clearfix {
+    display: block;
+}
+
+
+/* close commented backslash hack */
+
+
+/*////////////////*/
+
+@font-face {
+    font-family: 'FontAwesome';
+    src: url("../fonts/fontawesome-webfont.eot");
+    src: url("../fonts/fontawesome-webfont.woff") format("woff"), url("../fonts/fontawesome-webfont.svg") format("svg");
+}
+
+* {
+    font-family: 'FontAwesome';
+}
+
+
+/* ---------HEADER-------------*/
+
+header {
+    background-image: url('../img/home-bg.jpg');
+    background-position: 50% 0;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.head-txt {
+    display: inline-block;
+    margin: 400px 18% 0;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    float: right;
+    padding-left: 27%;
+}
+
+.head-txt p {
+    color: white;
+}
+
+.head-txt h1 {
+    font-size: 45px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    float: right;
+    margin-bottom: 30px;
+    direction: rtl;
+}
+
+.head-txt p {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 25px;
+    letter-spacing: 0.2px;
+    font-family: 'Poppins', sans-serif;
+    float: right;
+    margin-bottom: 30px;
+    direction: rtl;
+}
+
+.head-txt button {
+    float: right;
+    background-color: black;
+    color: white;
+    padding: 20px 25px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all ease-in-out 0.4s;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.head-txt button:hover {
+    filter: invert(1);
+}
+
+
+/* --------- PART-2 -------------*/
+
+.part-2 {
+    background: #f9f9f9;
+    text-align: center;
+    padding: 80px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    text-align: center;
+    display: inline-block;
+    width: 70%;
+}
+
+.service-thumb {
+    background: white;
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+    padding: 60px 15px 30px;
+    vertical-align: top;
+    position: relative;
+    transition: 1s;
+    margin: 0 15px;
+    border-radius: 15px;
+}
+
+.service-thumb2 {
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+    padding: 60px 15px 30px;
+    vertical-align: top;
+    position: relative;
+    transition: 1s;
+    margin: 0 15px;
+    background-color: #2b2b2b;
+    border-radius: 15px;
+}
+
+.service-thumb2 h4 {
+    color: white;
+}
+
+.ul-service-thumb .service-thumb:hover {
+    background-color: #2b2b2b;
+    transform: translateY(-3%);
+    transition: .6s;
+}
+
+.ul-service-thumb .service-thumb:hover .head-thumb {
+    color: white;
+}
+
+.ul-service-thumb .service-thumb2:hover {
+    background-color: #2b2b2b;
+    transform: translateY(-3%);
+    transition: .6s;
+}
+
+h2 {
+    color: #2b2b2b;
+    font-size: 35px;
+    line-height: 52px;
+    margin-top: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+h4 {
+    color: #353535;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+p {
+    color: #878787;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 25px;
+    letter-spacing: 0.2px;
+}
+
+.container span {
+    color: #878787;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 25px;
+    letter-spacing: 0.2px;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+
+.container p {
+    margin-bottom: 50px;
+}
+
+.container h4 {
+    margin-bottom: 30px;
+}
+
+svg:not(:root).svg-inline--fa {
+    color: #7682cc;
+    font-size: 60px;
+    margin-bottom: 35px;
+}
+
+/* --------- PART-3 -------------*/
+
+.part-3 {
+    text-align: center;
+    padding: 80px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.part-3 .container {
+    width: 70%;
+}
+
+.part-3-images {
+    width: 30%;
+    display: inline-block;
+    float: left;
+    margin: 0 40px;
+}
+
+.part-3-images img {
+    width: 95%;
+    display: inline-block;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.part-3-images svg:not(:root).svg-inline--fa {
+    color: black;
+    font-size: 20px;
+    margin: 0;
+    padding-top: 22%;
+    margin: 0 auto;
+}
+
+.part-3-images ul li a {
+    display: inline-block;
+    transition: .5s;
+    box-sizing: content-box;
+    border-radius: 50%;
+    background: rgb(219, 216, 216);
+    width: 40px;
+    height: 40px;
+}
+
+.part-3-images ul li a:hover {
+    filter: invert(1);
+    color: #ffffff;
+    transform: scale(1.2);
+    top: -5px;
+}
+
+.part-3-images ul li {
+    display: inline-block;
+    transition: .7s;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0 7px;
+}
+
+.part-3-txt {
+    width: 60%;
+    display: inline-block;
+    text-align: left;
+}
+
+.part-3-txt h2 {
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.part-3-txt p {
+    margin-bottom: 15px;
+}
+
+
+/* --------- PART-4 -------------*/
+
+.part-4 {
+    text-align: center;
+    padding: 80px 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+}
+
+.part-4-images li {
+    display: inline-block;
+    width: 27%;
+    margin: 0 10px;
+    border-radius: 25px;
+}
+
+.part-4-images li a {
+    display: block;
+    position: relative;
+}
+
+.thumb-wrapper {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.thumb-wrapper:hover {
+    background-color: #7682cc;
+    transition: 1s;
+}
+
+.poster {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.poster img {
+    width: 100%;
+}
+
+.poster img:hover {
+    opacity: 0;
+    transition: .5s;
+}
+
+.thumb-title {
+    position: absolute;
+    top: 17%;
+    z-index: -1;
+    /* opacity: 0; */
+    color: white;
+    font-size: 25px;
+    transition: .1s;
+}
+
+.first-title {
+    color: white;
+    font-size: 20px;
+}
+
+.graphic {
+    color: #2b2b2b;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 35px;
+}
+
+
+/* --------- PART-5 -------------*/
+
+.part-5 {
+    text-align: center;
+    padding: 80px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.part-5 .container {
+    width: 65%;
+}
+
+.part-5-left {
+    float: left;
+    text-align: left;
+    margin-left: 20px;
+    width: 60%;
+}
+
+.input {
+    display: inline-block;
+    width: 40%;
+    font-size: 20px;
+    margin: 2%;
+    border: white;
+    border-bottom: solid 2px #c8c2c2;
+    font-family: 'Poppins', sans-serif;
+    padding: 15px;
+}
+
+.txt-area {
+    font-size: 20px;
+    margin: 2%;
+    border: white;
+    border-bottom: solid 2px #c8c2c2;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    padding: 15px;
+    width: 85%;
+}
+
+.sub {
+    padding: 15px 35px;
+    background-color: #2b2b2b;
+    border: none;
+    border-radius: 50px;
+    color: #ffffff;
+    height: 50px;
+    margin-top: 24px;
+    font-size: 18px;
+    font-family: inherit;
+    transition: all ease-in-out 0.4s;
+    display: inline-block;
+}
+
+.part-5-left a {
+    display: inline-block;
+    float: right;
+    margin-right: 13%;
+}
+
+.sub:hover {
+    background: #7682cc;
+    transition: .8s;
+}
+
+.part-5-right {
+    float: right;
+    width: 38%;
+    display: inline-block;
+    text-align: left;
+    margin-top: 100px;
+}
+
+.part-5-right svg:not(:root).svg-inline--fa {
+    color: #878787;
+    ;
+    font-size: 17px;
+    display: inline-block;
+    vertical-align: center;
+    margin: 0;
+}
+
+.part-5-right p {
+    color: #878787;
+    margin-bottom: 25px;
+    display: inline-block;
+    vertical-align: center;
+}
+
+
+/* --------- FOOTER -------------*/
+
+footer {
+    background-color: #7682cc;
+    text-align: center;
+    padding: 100px 0;
+}
+
+footer p {
+    color: #f0f0f0;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer svg:not(:root).svg-inline--fa {
+    color: black;
+    font-size: 20px;
+    margin-bottom: 0;
+    width: 20px;
+    height: 20px;
+    box-sizing: content-box;
+    border-radius: 50%;
+}
+
+footer ul li a {
+    display: inline-block;
+    padding: 15px;
+    transition: .5s;
+    box-sizing: content-box;
+    border-radius: 50%;
+    background: rgb(219, 216, 216);
+    padding-bottom: 12px;
+}
+
+footer ul li a:hover {
+    filter: invert(1);
+    color: #ffffff;
+    transform: scale(1.2);
+}
+
+footer ul li {
+    display: inline-block;
+    transition: .7s;
+    text-align: center;
+    box-sizing: border-box;
+    position: relative;
+    margin: 0 7px;
+}
+
+
+/* --------- COLOR BOX -------------*/
+
+#colorbox,
+#cboxOverlay,
+#cboxWrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    overflow: none !important;
+}
+
+#cboxOverlay {
+    background: #1d1d1f;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 500;
+    overflow: none;
+}
+
+#cboxPrevious {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    margin-top: -32px;
+    background: url('../img/arrow-circle-left-solid.svg') no-repeat top left !important;
+    opacity: .4 !important;
+    width: 28px;
+    height: 28px!important;
+    text-indent: -9999px;
+}
+
+#cboxNext {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    margin-top: -32px;
+    background: url('../img/arrow-circle-right-solid.svg') no-repeat top right !important;
+    width: 28px;
+    opacity: .4 !important;
+    height: 28px !important;
+    text-indent: -9999px;
+}
+
+#cboxLoadedContent {
+    border: 3px solid #91945f !important;
+    border-radius: 10px!important;
+}
+
+
+/* --------- @MEDIA QUERY -------------*/
+
+@media only screen and (min-width:200px) and (max-width:500px) {
+    .head-txt h1 {
+        font-size: 40px;
+    }
+    .part-4-images li {
+        width: 90%;
+    }
+    .container,
+    .part-3 .container,
+    .part-5 .container,
+    .part-5-left,
+    .part-5-right,
+    .part-3-txt {
+        width: 95%;
+    }
+    .service-thumb2,
+    .service-thumb {
+        width: 80%;
+        margin: 30px 15px;
+    }
+    .part-3-images {
+        margin: 0 auto;
+        width: 100%;
+    }
+    .head-txt {
+        padding-left: 0;
+        margin: 202px 10% 0;
+    }
+}
+
+@media only screen and (min-width:500px) and (max-width:1000px) {
+    .head-txt h1 {
+        font-size: 40px;
+    }
+    .container,
+    .part-3 .container,
+    .part-5 .container,
+    .part-5-left,
+    .part-5-right,
+    .part-3-txt {
+        width: 90%;
+    }
+    .service-thumb2,
+    .service-thumb {
+        width: 38%;
+    }
+    .part-3-images {
+        margin-bottom: 30px;
+        width: 90%;
+    }
+    .head-txt {
+        padding-left: 0;
+    }
+}
+
+@media only screen and (min-width:1000px) and (max-width:1300px) {
+    .container,
+    .part-3 .container {
+        width: 90%;
+    }
+    .part-5 .container {
+        width: 90%;
+    }
+    .part-5-left {
+        width: 55%;
+    }
+}
+
+
+@media only screen and (min-width:1300px) and (max-width:1570px) {
+    .part-5 .container {
+        width: 90%;
+    }
+    .part-5-left {
+        width: 55%;
+    }
+}
